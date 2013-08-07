@@ -153,6 +153,9 @@ INSTALLED_APPS = (
     'suescunet.apps.articulos',
     'suescunet.apps.home',
     'suescunet.apps.webServices',
+    'suescunet.apps.elementos_desarrollo',
+    'suescunet.apps.fragmentos',
+    'suescunet.apps.proyectos',
 
 
     # Uncomment the next line to enable admin documentation:

@@ -52,11 +52,7 @@ Thumbs.db
 /Procfile
 /requirements.txt
 /suescunet.db
-/suescunet/media/MultimediaData/productos/*.jpg
-/suescunet/media/MultimediaData/productos/*.png
-/suescunet/media/MultimediaData/productos/*.jpeg
-/suescunet/media/MultimediaData/productos/*.gif
-
+/suescunet/media/**
 
 
 

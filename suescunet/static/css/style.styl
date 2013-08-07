@@ -4,9 +4,11 @@ gris_60 = #AAAAAA
 gris_50 = #ccc
 gris_40 = #D5D5D5
 gris_30 = #E1E1E1
+gris_20 = #e2e2e2
 azul_10 = #6FB6F1
 c_twitter = #2FC2EF
 c_facebook = #3B5998
+
 
 @import "normalize.min.styl"
 @import "sprites.styl"
@@ -21,17 +23,18 @@ border-radius()
 body
 	font-size 16px
 	text-align center
-	background-color gris_30
+	background-color white
 header
 	background-color gris_80
 	//border 1px solid red
-	height 100px
+	//height 0px
 	width 100%
 
 
 
 	h1 
 		font-size 20px
+		color #e2e2e2
 		//border 1px solid green
 		width 60%
 
@@ -53,7 +56,7 @@ header
 	nav 
 		//border 1px solid green
 		background-color gris_70
-		height 45px
+		height 38px
 		text-align left
 		position relative
 		padding-left 4%
@@ -96,31 +99,33 @@ header
 			
 
 #contenido
-	border-radius(10px)
-	border 2px solid gris_60
-	min-height 100px
-	margin 1em 2% 1em 3%
-	background-color gris_40
-	width 55%
+	//border-radius(10px)
+	//border 2px solid gris_60
+	//min-height 100px
+	//margin 1em 2% 1em 3%
+	//background-color gris_40
+	//width 55%
+	width 100%
 
 
 
 
 	article 
-		border 1px solid gris_80
+		//border 1px solid gris_80
 		border-radius(5px)
-		width 30%
+		//width 30%
+		width 100%
 		display inline-block
 		vertical-align top
-		background-color gris_30
+		background-color gris_20
 		//height 10em
-		margin 0.6em 0.2em 0em 0.2em
+		margin 0.5em 0em 0em 0em
 
 		figure
 			//padding 2%
 			width 100%
 			overflow hidden
-			height 150px
+			//height 150px
 
 			img 
 				margin 0px
@@ -250,15 +255,16 @@ header
 
 footer
 	//border 2px solid blue
-	height 160px
+	//height 160px
 	background-color gris_80
 			
 	div
 		//border 1px solid red
 		display inline-block
 		vertical-align top
-		width 30%
-		height 100%
+		//width 30%
+		//height 100%
+		width 100%
 
 
 
@@ -280,6 +286,7 @@ footer
 				height 1.5em
 				text-align left
 				margin-left 0.5em
+
 
 				a
 					color gris_50
@@ -314,43 +321,4 @@ footer
 			width 90%
 
 
-
-/*.btn2 
-	display: inline-block
-	*display: inline
-	padding: 4px 12px
-	margin-bottom: 0
-	*margin-left: .3em
-	font-size: 14px
-	line-height: 20px
-	color: #333333
-	text-align: center
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75)
-	vertical-align: middle
-	cursor: pointer
-	background-color: #f5f5f5
-	*background-color: #e6e6e6
-	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6)
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6))
-	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6)
-	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6)
-	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6)
-	background-repeat: repeat-x;
-	border: 1px solid #cccccc;
-	*border: 0;
-	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-	border-bottom-color: #b3b3b3;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-	*zoom: 1;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-
-			
-
-*/
+@import "responsive.styl"

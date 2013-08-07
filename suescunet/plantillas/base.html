@@ -15,7 +15,7 @@
 	setInterval(function(){
 window.location.reload()
 
-	}, 100hh0)
+	}, 10d00)
 
 
 
@@ -23,17 +23,19 @@ window.location.reload()
 </head>
 <body>
 	<header>
-		<h1>productos demos </h1>
+		<h1>Test Tecnologia</h1>
 		<p>
 			{% if user.is_authenticated %}
-				<a href="{% url vista_logout %}">cerrar cesion</a>
+				<a href="{% url vista_logout %}"  class=" icon-enter"> cerrar cesion</a>
 			{% else %}
-				<a href="{% url vista_login %}">login</a>
+				<a href="{% url vista_login %}" class=" icon-enter"> login</a>
 			{% endif %}
 		</p>
 		<nav>
-			<span><a href="/articulos/page/1" class='icon-home'>Inicio</a></span>
-			<span><a href="/articulos/page/1"> productos</a></span>
+			<span><a href="/articulos/page/1" class='icon-home'> Inicio</a></span>
+			<span><a href="/articulos/page/1" class="icon-images"> Galeria</a></span>
+			<span><a href="/articulos/page/1" class=" icon-file-2"> Codigos</a></span>
+
 		{%comment %}	<a href="{% url vista_articulo_ingresar1 %}">agregar productos dos</a>{% endcomment %}
 		</nav>
 	</header>
@@ -90,8 +92,8 @@ window.location.reload()
 	<div><span>sobre ... </span><p>Internet Explorer Firefox Opera Google Chrome Safari. The vertical-align property is supported in all major browsers. Note: The value "inherit" is not supported in </p></div>
 	<div>
 		<ul><span>Navegacion</span>
-			<li><a href="/articulos/page/1" class="btn2">Inicio</a></li>
-			<li><a href="/articulos/page/1">productos</a></li>
+			<li><a href="/articulos/page/1" class='icon-home'>Inicio</a></li>
+			<li><a href="/articulos/page/1"  class="icon-images">Galeria</a></li>
 			<!-- <li></li>
 			<li></li>
 			<li></li> -->

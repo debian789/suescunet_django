@@ -61,36 +61,75 @@ table{border-collapse:collapse;border-spacing:0}
 .prygame{background-position:0 0;width:584px;height:164px}
 .django-logo{background-position:-908px -258px;width:150px;height:84px}
 .python_logo{background-position:-791px -358px;width:280px;height:280px}
-@font-face{font-family:'iconos';src:url("../fonts/iconos.eot");src:url("../fonts/iconos.eot?#iefix") format('embedded-opentype'),url("../fonts/iconos.woff") format('woff'),url("../fonts/iconos.ttf") format('truetype'),url("../fonts/iconos.svg#iconos") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'iconos';src:url("../fonts/iconfonts/iconos.eot");src:url("../fonts/iconfonts/iconos.eot?#iefix") format('embedded-opentype'),url("../fonts/iconfonts/iconos.woff") format('woff'),url("../fonts/iconfonts/iconos.ttf") format('truetype'),url("../fonts/iconfonts/iconos.svg#iconos") format('svg');font-weight:normal;font-style:normal}
 [data-icon]:before{font-family:'iconos';content:attr(data-icon);speak:none;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}
-.icon-home,.icon-uniF474,.icon-uniF475,.icon-image,.icon-uniF476,.icon-uniF477,.icon-uniF478,.icon-uniF479,.icon-uniF47C,.icon-file,.icon-deletefile,.icon-createfile,.icon-save{font-family:'iconos';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}
-.icon-home:before{content:"\68"}
-.icon-uniF474:before{content:"\20"}
-.icon-uniF475:before{content:"\aba"}
-.icon-image:before{content:"\22b7"}
-.icon-uniF476:before{content:"\f476"}
-.icon-uniF477:before{content:"\f477"}
-.icon-uniF478:before{content:"\f478"}
-.icon-uniF479:before{content:"\f479"}
-.icon-uniF47C:before{content:"\ed"}
-.icon-file:before{content:"\f0d6"}
-.icon-deletefile:before{content:"\f0c7"}
-.icon-createfile:before{content:"\f0c6"}
-.icon-save:before{content:"\f0c8"}
-body{font-size:16px;text-align:center;background-color:#e1e1e1}
-header{background-color:#3f3f3f;height:100px;width:100%;}
-header h1{font-size:20px;width:60%}
+.icon-home,.icon-images,.icon-image,.icon-play,.icon-file,.icon-file-2,.icon-profile,.icon-copy,.icon-spinner,.icon-undo,.icon-redo,.icon-forward,.icon-reply,.icon-expand,.icon-contract,.icon-busy,.icon-spinner-2,.icon-remove,.icon-remove-2,.icon-cog,.icon-thumbs-up,.icon-thumbs-up-2,.icon-star,.icon-star-2,.icon-minus,.icon-plus,.icon-enter,.icon-cancel-circle,.icon-checkmark-circle,.icon-twitter,.icon-twitter-2,.icon-google-plus,.icon-google,.icon-google-drive,.icon-facebook,.icon-facebook-2,.icon-windows,.icon-tux,.icon-html5,.icon-move-alt2,.icon-check-alt,.icon-x-altx-alt,.icon-x,.icon-checkmark,.icon-arrow-down-alt1,.icon-arrow-up-alt1,.icon-arrow-down,.icon-arrow-up,.icon-arrow-left,.icon-arrow-right,.icon-arrow-right-alt1,.icon-arrow-left-alt1{font-family:'iconos';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}
+.icon-home:before{content:"\e001"}
+.icon-images:before{content:"\e003"}
+.icon-image:before{content:"\e004"}
+.icon-play:before{content:"\e005"}
+.icon-file:before{content:"\e006"}
+.icon-file-2:before{content:"\e007"}
+.icon-profile:before{content:"\e008"}
+.icon-copy:before{content:"\e009"}
+.icon-spinner:before{content:"\e00a"}
+.icon-undo:before{content:"\e00b"}
+.icon-redo:before{content:"\e00c"}
+.icon-forward:before{content:"\e00d"}
+.icon-reply:before{content:"\e00e"}
+.icon-expand:before{content:"\e00f"}
+.icon-contract:before{content:"\e010"}
+.icon-busy:before{content:"\e011"}
+.icon-spinner-2:before{content:"\e012"}
+.icon-remove:before{content:"\e015"}
+.icon-remove-2:before{content:"\e016"}
+.icon-cog:before{content:"\e017"}
+.icon-thumbs-up:before{content:"\e013"}
+.icon-thumbs-up-2:before{content:"\e014"}
+.icon-star:before{content:"\e018"}
+.icon-star-2:before{content:"\e019"}
+.icon-minus:before{content:"\e01d"}
+.icon-plus:before{content:"\e01e"}
+.icon-enter:before{content:"\e01f"}
+.icon-cancel-circle:before{content:"\e020"}
+.icon-checkmark-circle:before{content:"\e021"}
+.icon-twitter:before{content:"\e022"}
+.icon-twitter-2:before{content:"\e023"}
+.icon-google-plus:before{content:"\e024"}
+.icon-google:before{content:"\e025"}
+.icon-google-drive:before{content:"\e026"}
+.icon-facebook:before{content:"\e027"}
+.icon-facebook-2:before{content:"\e028"}
+.icon-windows:before{content:"\e029"}
+.icon-tux:before{content:"\e02a"}
+.icon-html5:before{content:"\e02b"}
+.icon-move-alt2:before{content:"\e02c"}
+.icon-check-alt:before{content:"\e02d"}
+.icon-x-altx-alt:before{content:"\e02e"}
+.icon-x:before{content:"\e02f"}
+.icon-checkmark:before{content:"\e030"}
+.icon-arrow-down-alt1:before{content:"\e031"}
+.icon-arrow-up-alt1:before{content:"\e032"}
+.icon-arrow-down:before{content:"\e033"}
+.icon-arrow-up:before{content:"\e034"}
+.icon-arrow-left:before{content:"\e035"}
+.icon-arrow-right:before{content:"\e036"}
+.icon-arrow-right-alt1:before{content:"\e037"}
+.icon-arrow-left-alt1:before{content:"\e038"}
+body{font-size:16px;text-align:center;background-color:#fff}
+header{background-color:#3f3f3f;width:100%;}
+header h1{font-size:20px;color:#e2e2e2;width:60%}
 header p{height:20px;text-align:right;width:30%;}
 header p a{color:#aaa;text-decoration:none}
 header h1,header p{display:inline-block;vertical-align:top}
-header nav{background-color:#545454;height:45px;text-align:left;position:relative;padding-left:4%;}
+header nav{background-color:#545454;height:38px;text-align:left;position:relative;padding-left:4%;}
 header nav span{display:inline-block;height:100%;margin:0 0 0 0;vertical-align:top;padding:0 10px 0 10px;}
 header nav span a{color:#aaa;display:block;margin:10px 0 0 0;width:100%;text-decoration:none}
 header nav span:hover{background-color:#aaa;}
 header nav span:hover a{color:#545454;display:block}
-#contenido{-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;border:2px solid #aaa;min-height:100px;margin:1em 2% 1em 3%;background-color:#d5d5d5;width:55%;}
-#contenido article{border:1px solid #3f3f3f;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;width:30%;display:inline-block;vertical-align:top;background-color:#e1e1e1;margin:.6em .2em 0 .2em;}
-#contenido article figure{width:100%;overflow:hidden;height:150px;}
+#contenido{width:100%;}
+#contenido article{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;width:100%;display:inline-block;vertical-align:top;background-color:#e2e2e2;margin:.5em 0 0 0;}
+#contenido article figure{width:100%;overflow:hidden;}
 #contenido article figure img{margin:0;width:90%}
 #contenido article span{display:block;color:#3f3f3f;border-bottom:1px solid #aaa;height:25px;margin:6px auto 6px auto;width:90%;text-align:center}
 #contenido article p{margin:2px auto 2px auto;text-align:justify;width:90%;font-size:.9em;overflow:hidden;height:auto}
@@ -108,8 +147,8 @@ header nav span:hover a{color:#545454;display:block}
 #contenido .navegacionNum a,#contenido .navegacionNum h4{display:inline-block}
 #cuadroInteractivo{border:2px solid #545454;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;min-height:100px;margin:1em 3% 1em 0;width:33%}
 #contenido,#cuadroInteractivo{display:inline-block;vertical-align:top}
-footer{height:160px;background-color:#3f3f3f;}
-footer div{display:inline-block;vertical-align:top;width:30%;height:100%;}
+footer{background-color:#3f3f3f;}
+footer div{display:inline-block;vertical-align:top;width:100%;}
 footer div img{width:4em}
 footer div ul{list-style-type:none;padding:0;margin:0 0 0 0;}
 footer div ul span{font-size:1.2em;color:#aaa}
@@ -118,3 +157,6 @@ footer div ul li a{color:#ccc;display:block;text-decoration:none}
 footer div ul li a:hover{color:#545454;background-color:#aaa;display:block;text-decoration:none}
 footer div span{margin-top:.5em;color:#aaa;font-size:1.2em;display:block;width:100%;border-bottom:1px solid #aaa}
 footer div p{color:#ccc;font-size:.9em;margin:1em 1em 1em 1em;margin-bottom:-1em;height:80%;overflow:hidden;text-align:justify;width:90%}
+@media screen and (min-width:768px){#contenido{-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;border:2px solid #aaa;width:55%;margin:1em 2% 1em 3%;background-color:#d5d5d5;}
+#contenido article{border:1px solid #3f3f3f;width:30%}
+}footer div{width:30%}
