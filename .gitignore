@@ -42,7 +42,7 @@ Thumbs.db
 *.log
 *.html~
 /.gitignore~
-
+*.save
 #
 # Ficheros generados por el SO
 #
