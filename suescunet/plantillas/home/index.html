@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% block contenido%}
+{% if user.is_authenticated%}
+	Bienvenido {{ user.username }}
+	{% if user.get_profile.photo %}
+		<img src="{{ MEDIA_URL}}/{{user.get_profile.photo }}" width="100px" />
+
+	{% endif %}
+
+	{% if user.get_profile.telefono %}
+	<p> Numero telefonico : {{ user.get_profile.telefono}}</p>
+	{% endif %}
+{% endif%}
+
+{% endblock%}

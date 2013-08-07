@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block titulo %} Inicio Bienvenidos{% endblock %}
+{% block contenido%}
+
+
+
+
+		
+{% if articulos  %}
+	{% for articulo in articulos %}
+		<article>
+			<span>{{articulo.titulo}}</span>
+			<div></div>
+			<figure>
+				<img src="{{MEDIA_URL}}/{{articulo.imagen}}">
+			</figure>
+			<p>{{articulo.contenido}}</p>
+			<div><a href="/articulo/{{articulo.id}}">
+			<input type="button" value="Detalles" >
+				
+			</a>
+		</div>
+		</article>
+	{% endfor%}
+{% endif%}
+
+{% if user.is_authenticated %}
+<a href="{% url vista_articulo_ingresar2 %}"> Agregar Nuevo</a>
+{% endif %}
+
+
+<br/>
+{% if articulos %}
+		<a href="/articulos/page/1"> Primero </a>
+	{% if articulos.has_previous %}
+		<a href="/articulos/page/{{articulos.previous_page_number}}/"> anterior </a>
+	{% else %}
+		<a href="#">anterior </a>
+	{%endif%}
+	{% if articulos.has_next %}
+		<a href="/articulos/page/{{articulos.next_page_number}}/">siguiente </a>
+	{% else %}
+		<a href="#">siguiente </a>
+	{%endif%}
+
+<a href="/articulos/page/{{articulos.paginator.num_pages}}">Ultimo </a>
+
+
+<h4>Pagina {{ articulos.number }} de {{articulos.paginator.num_pages}}</h4>
+
+{% endif%}
+
+{% endblock%}
+

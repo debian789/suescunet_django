@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}Plantilla Base{% endblock %}</title>
+	<link rel="stylesheet" href="{{STATIC_URL}}css/style.css"/>
+	<link rel="stylesheet" href="{{STATIC_URL}}js/vendor/jquery-1.10.1.min.js"/>
+	{%comment %}
+	<link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap-responsive.min.css"/>
+	<link rel="stylesheet" href="{{STATIC_URL}}js/vendor/bootstrap.min.js"/>
+	{%endcomment %}
+
+<script>
+	setInterval(function(){
+window.location.reload()
+
+	}, 100hh0)
+
+
+
+</script>
+</head>
+<body>
+	<header>
+		<h1>productos demos </h1>
+		<p>
+			{% if user.is_authenticated %}
+				<a href="{% url vista_logout %}">cerrar cesion</a>
+			{% else %}
+				<a href="{% url vista_login %}">login</a>
+			{% endif %}
+		</p>
+		<nav>
+			<span><a href="/articulos/page/1" class='icon-home'>Inicio</a></span>
+			<span><a href="/articulos/page/1"> productos</a></span>
+		{%comment %}	<a href="{% url vista_articulo_ingresar1 %}">agregar productos dos</a>{% endcomment %}
+		</nav>
+	</header>
+
+<aside>
+
+</aside>
+	<section id="contenido">
+		{%comment %}
+		<article>
+			<span>Nombre</span>
+			<div></div>
+			<figure>
+				<img src="{{STATIC_URL}}/img/cobie.jpeg"
+			</figure>
+			<p>sdajf asdf 
+				f as
+				f asd fsa
+				df  asds
+			 asdfsadf</p>
+			<div><input type="button" value="Detalles"></div>
+		</article>
+		<article>
+
+				<span>Nombre</span>
+			<div></div>
+			<figure>
+				<img src="{{STATIC_URL}}/img/hot.jpg"
+			</figure>
+			<p>sdajf asdf 
+				f as
+				f asd fsa
+				df  asds
+			 asdfsadf</p>
+			<div><input type="button" value="Detalles"></div>
+		</article>
+		<article></article>
+		<article></article>
+		<article></article>
+		<article></article>
+		<article></article>
+{%endcomment %}
+
+		{% block contenido%}
+
+		{% endblock%}
+	</section>
+	<section id="cuadroInteractivo">
+		<div class="Box2D_logo"></div>
+	</section>
+
+<footer>
+	<div><img src="{{STATIC_URL}}/img/logo.png"/></div>
+	<div><span>sobre ... </span><p>Internet Explorer Firefox Opera Google Chrome Safari. The vertical-align property is supported in all major browsers. Note: The value "inherit" is not supported in </p></div>
+	<div>
+		<ul><span>Navegacion</span>
+			<li><a href="/articulos/page/1" class="btn2">Inicio</a></li>
+			<li><a href="/articulos/page/1">productos</a></li>
+			<!-- <li></li>
+			<li></li>
+			<li></li> -->
+		</ul>
+
+
+	</div>
+	
+
+</footer>
+<!-- 	<section>
+		<figure>
+			<img src="{{STATIC_URL}}img/hot.jpg" width="100" height="100"/>
+		</figure>
+	</section> -->
+
+</body>
+</html>

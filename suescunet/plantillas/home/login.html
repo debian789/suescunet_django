@@ -1,0 +1,33 @@
+{% extends "base.html"%}
+{% block title %} login{% endblock%}
+{% block contenido %}
+
+
+<div id="tituloLogin">Log in to your account </div>
+
+<fieldset>
+	<span>use your account</span>
+	<div class="conFacebook">Login with Facebook</div>
+	<div class="conTwitter">Login with Twitter</div>
+	or 
+
+
+<form action="." method="POST">
+	{% csrf_token %}
+	{{mensaje}}
+	{{form.as_p}}
+
+	<input type="radio" id="recordar">
+	<label for="recordar">Recordar
+
+	</label>
+
+    <label>Forgot password?</label>
+
+	<input type="submit" value="Login" class="btn  "><li class="icon-search"></li>
+	
+
+
+</form>
+</fieldset>
+{% endblock%}
