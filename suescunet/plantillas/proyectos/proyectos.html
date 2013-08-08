@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block titulo%} Proyectos de codigo {% endblock %}
+{% block contenido %}
+
+
+{% if proyectos %}
+	{% for proyecto in proyectos %}
+		{{ proyecto.nombre }}
+
+		{% if proyecto.archivo %}
+			con archivo
+		{% else %}
+			sin archivo
+		{% endif %}
+
+	{% endfor %}
+{% endif%}
+
+
+
+<br/>
+{% if proyectos %}
+		<a href="/proyectos/1"> Primero </a>
+	{% if proyectos.has_previous %}
+		<a href="/proyectos/{{proyectos.previous_page_number}}/"> anterior </a>
+	{% else %}
+		<a href="#">anterior </a>
+	{%endif%}
+	{% if proyectos.has_next %}
+		<a href="/proyectos/{{proyectos.next_page_number}}/">siguiente </a>
+	{% else %}
+		<a href="#">siguiente </a>
+	{%endif%}
+
+<a href="/proyectos/{{proyectos.paginator.num_pages}}">Ultimo </a>
+
+
+<h4>Pagina {{ proyectos.number }} de {{proyectos.paginator.num_pages}}</h4>
+
+{% endif%}
+
+
+
+{% endblock %}

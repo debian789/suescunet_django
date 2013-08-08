@@ -9,6 +9,10 @@ urlpatterns = patterns('',
 	url(r'^',include('suescunet.apps.articulos.urls')),
 	url(r'^',include('suescunet.apps.home.urls')),
     url(r'^',include('suescunet.apps.webServices.wsArticulos.urls')),
+    url(r'^',include('suescunet.apps.fragmentos.urls')),
+    url(r'^',include('suescunet.apps.proyectos.urls')),
+
+
 
 	url(r'^media/(?P<path>.*)$','django.views.static.serve',{"document_root":settings.MEDIA_ROOT}),
     url(r'^static/(?P<path>.*)$','django.views.static.serve',{"document_root":settings.STATICFILES_DIRS}),
