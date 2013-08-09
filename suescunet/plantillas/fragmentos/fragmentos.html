@@ -1,20 +1,157 @@
 {% extends "base.html" %}
 {% block titulo%} Fragmentos de codigo {% endblock %}
 {% block contenido %}
+que los cuadros sean dragable cuando quiera seleccionar alguno que lo mueva a un aparte moviendo el mouse y depues que permita su visualizacion mas detallada 
+
+
+<div class="barraConfiguracion">
+	<label> Codigos catalogados</label>
+	<span class="icon-grid"></span>
+	<span class=" icon-list"></span>
+
+</div>
+
+{% comment %}
+{% if fragmentos %}
+<table>
+<tr><th>Nombre</th><th>Lenguaje</th><th colspan="4">Accion</th><tr>
+	{% for fragmento in fragmentos %}
+	<tr>
+		<td>{{ fragmento.nombre }}</td>
+		<td>{{fragmento.lenguaje}}</td>
+		<td>{% if fragmento.archivo %}
+			<span class=" icon-attachment"></span>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}</td>
+		<td><span class=" icon-file-2"></span></td>
+		<td><span class=" icon-remove"></span></td>
+
+	</tr>
+
+		
+
+	{% endfor %}
+</table>
+{% endif%}
+
+
+
+{% endcomment %}
 
 
 {% if fragmentos %}
-	{% for fragmento in fragmentos %}
-		{{ fragmento.nombre }}
-
-		{% if fragmento.archivo %}
-			con archivo
+{% for fragmento in fragmentos %}
+<article class="fragmentos_codigo">
+	<p>{{ fragmento.nombre }}  </p>
+{% if fragmento.archivo %}
+			<a href="{{MEDIA_URL}}/{{fragmento.archivo}}"><span class=" icon-attachment"></span></a>
 		{% else %}
-			sin archivo
+			<span class="  icon-attachment"></span>
 		{% endif %}
 
-	{% endfor %}
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+
+
+{% for fragmento in fragmentos %}
+<article class="fragmentos_codigo">
+	<p>{{ fragmento.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+{% if fragmento.archivo %}
+			<a href="{{MEDIA_URL}}/{{fragmento.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+
+{% for fragmento in fragmentos %}
+<article class="fragmentos_codigo">
+	<p>{{ fragmento.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+{% if fragmento.archivo %}
+			<a href="{{MEDIA_URL}}/{{fragmento.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+{% for fragmento in fragmentos %}
+<article class="fragmentos_codigo">
+	<p>{{ fragmento.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+{% if fragmento.archivo %}
+			<a href="{{MEDIA_URL}}/{{fragmento.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+{% for fragmento in fragmentos %}
+<article class="fragmentos_codigo">
+	<p>{{ fragmento.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+{% if fragmento.archivo %}
+			<a href="{{MEDIA_URL}}/{{fragmento.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+{% for fragmento in fragmentos %}
+<article class="fragmentos_codigo">
+	<p>{{ fragmento.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+{% if fragmento.archivo %}
+			<a href="{{MEDIA_URL}}/{{fragmento.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+{% for fragmento in fragmentos %}
+<article class="fragmentos_codigo">
+	<p>{{ fragmento.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+
+{% if fragmento.archivo %}
+			<a href="{{MEDIA_URL}}/{{fragmento.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+
 {% endif%}
+
+
+
+
+
+
+
 
 
 

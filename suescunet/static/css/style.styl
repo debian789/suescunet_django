@@ -1,11 +1,14 @@
 gris_80 = #3F3F3F
-gris_70 = #545454
-gris_60 = #AAAAAA
+gris_70 = #5c5c5c
+gris_60 = #3d3d3d
 gris_50 = #ccc
 gris_40 = #D5D5D5
 gris_30 = #E1E1E1
 gris_20 = #e2e2e2
+gris_10 = #f0f0f0
 azul_10 = #6FB6F1
+negro_10 = #181818
+
 c_twitter = #2FC2EF
 c_facebook = #3B5998
 
@@ -23,7 +26,8 @@ border-radius()
 body
 	font-size 16px
 	text-align center
-	background-color white
+	background-color gris_10	
+	//background-color #E9EAED
 header
 	background-color gris_80
 	//border 1px solid red
@@ -54,7 +58,7 @@ header
 		display inline-block
 		vertical-align top
 	nav 
-		//border 1px solid green
+		border-top 1px solid negro_10
 		background-color gris_70
 		height 38px
 		text-align left
@@ -74,15 +78,20 @@ header
 			
 
 			a 
-				color gris_60				
+				color gris_50				
 				display block
 				margin 10px 0px 0px 0px
 				width 100%	
 				text-decoration none	
 		span:hover 
 			background-color gris_60
+			border-top 0px  solid negro_10 
+			border-left 1px  solid negro_10 
+			border-right 1px  solid negro_10 
+			border-bottom 0px  solid negro_10 
 
-			//border 1px solid black
+			// 1px 0px 1px 
+			//border-color  negro_10
 			//display inline-block
 			//height 100%
 			//margin 0px 0px 0px 0px
@@ -90,7 +99,7 @@ header
 			//padding 0px 10px 0px 10px
 
 			a 
-				color gris_70				
+				color gris_50				
 				display block
 				//margin 10px 0px 0px 0px
 				//width 100%	
@@ -103,7 +112,7 @@ header
 	//border 2px solid gris_60
 	//min-height 100px
 	//margin 1em 2% 1em 3%
-	//background-color gris_40
+	//background-color gris_10
 	//width 55%
 	width 100%
 
@@ -117,7 +126,7 @@ header
 		width 100%
 		display inline-block
 		vertical-align top
-		background-color gris_20
+		//background-color #E9EAED
 		//height 10em
 		margin 0.5em 0em 0em 0em
 
@@ -157,6 +166,43 @@ header
 			margin-bottom 6px
 	
 
+	.fragmentos_codigo
+		border-radius(5px)
+		//width 30%
+		width 100%
+		display inline-block
+		vertical-align top
+		//background-color gris_30
+		//border 1px solid gris_30
+		//height 10em
+		margin 0.5em 0em 0em 0em
+
+		p 
+			padding 0.5em 0.5em 0.7em 0.5em
+			//border 1px solid red
+			border-bottom 1px solid gris_60
+		span
+			margin-top 0.5em
+			border 0
+			display inline-block
+			vertical-align top
+			width 25%
+
+
+
+
+
+
+	table 
+		border 1px solid red
+		width 100%
+		td 
+			border 1px solid blue
+			padding 0.3em
+		td:first-of-type			
+			text-align left
+			padding-left 1em
+
 	fieldset
 		border 1px solid gris_60
 		border-radius(4px)
@@ -195,6 +241,34 @@ header
 			margin-bottom 7px
 			padding 7px 15px 7px 7px
 			text-align right
+
+
+
+	.barraConfiguracion
+		//border 1px solid blue
+		background-color #36a9e1
+		display block
+		padding 0.3em
+		text-align right
+
+
+		span
+			color gris_10
+			margin 4px
+			//border 1px solid blue
+			height 100%
+			//display block
+
+		label
+			//width 100%
+			border 1px solid red
+			float left
+			color white
+
+		span,label
+			//display inline-block
+
+
 
 
 
