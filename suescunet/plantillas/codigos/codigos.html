@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+{% block titulo%} codigos de codigo {% endblock %}
+{% block contenido %}
+que los cuadros sean dragable cuando quiera seleccionar alguno que lo mueva a un aparte moviendo el mouse y depues que permita su visualizacion mas detallada 
+
+
+<div class="barraConfiguracion">
+	<label> Codigos catalogados</label>
+	<span class="icon-grid"></span>
+	<span class=" icon-list"></span>
+
+</div>
+
+{% comment %}
+
+{% if codigos %}
+<table>
+<tr><th>Nombre</th><th>Lenguaje</th><th colspan="4">Accion</th><tr>
+	{% for codigo in codigos %}
+	<tr>
+		<td>{{ codigo.nombre }}</td>
+		<td>{{codigo.lenguaje}}</td>
+		<td>{% if codigo.archivo %}
+			<span class=" icon-attachment"></span>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}</td>
+		<td><span class=" icon-file-2"></span></td>
+		<td><span class=" icon-remove"></span></td>
+
+	</tr>
+
+		
+
+	{% endfor %}
+</table>
+{% endif%}
+
+
+
+{% endcomment %}
+
+
+{% if codigos %}
+{% for codigo in codigos %}
+<article class="codigos_codigo">
+	<p>{{ codigo.nombre }}  </p>
+{% if codigo.archivo %}
+			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+
+
+{% for codigo in codigos %}
+<article class="codigos_codigo">
+	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+{% if codigo.archivo %}
+			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+
+{% for codigo in codigos %}
+<article class="codigos_codigo">
+	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+{% if codigo.archivo %}
+			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+{% for codigo in codigos %}
+<article class="codigos_codigo">
+	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+{% if codigo.archivo %}
+			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+{% for codigo in codigos %}
+<article class="codigos_codigo">
+	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+{% if codigo.archivo %}
+			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+{% for codigo in codigos %}
+<article class="codigos_codigo">
+	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+{% if codigo.archivo %}
+			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+{% for codigo in codigos %}
+<article class="codigos_codigo">
+	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
+
+{% if codigo.archivo %}
+			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+		{% else %}
+			<span class="  icon-attachment"></span>
+		{% endif %}
+
+	<span class=" icon-file-2"></span>
+		<span class=" icon-remove"></span></td>
+
+</article>
+{% endfor %}
+
+{% endif%}
+
+
+
+
+
+
+
+
+
+
+<br/>
+{% if codigos %}
+		<a href="/codigos/1"> Primero </a>
+	{% if codigos.has_previous %}
+		<a href="/codigos/{{codigos.previous_page_number}}/"> anterior </a>
+	{% else %}
+		<a href="#">anterior </a>
+	{%endif%}
+	{% if codigos.has_next %}
+		<a href="/codigos/{{codigos.next_page_number}}/">siguiente </a>
+	{% else %}
+		<a href="#">siguiente </a>
+	{%endif%}
+
+<a href="/codigos/{{codigos.paginator.num_pages}}">Ultimo </a>
+
+
+<h4>Pagina {{ codigos.number }} de {{codigos.paginator.num_pages}}</h4>
+
+{% endif%}
+
+
+
+{% endblock %}

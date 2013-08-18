@@ -154,7 +154,7 @@ INSTALLED_APPS = (
     'suescunet.apps.home',
     'suescunet.apps.webServices',
     'suescunet.apps.elementos_desarrollo',
-    'suescunet.apps.fragmentos',
+    'suescunet.apps.codigos',
     'suescunet.apps.proyectos',
 
 
