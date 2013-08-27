@@ -1,160 +1,110 @@
 {% extends "base.html" %}
 {% block titulo%} codigos de codigo {% endblock %}
+{% block barraContenido %}
+
+Codigos catalogados
+{% endblock %}
+
 {% block contenido %}
-que los cuadros sean dragable cuando quiera seleccionar alguno que lo mueva a un aparte moviendo el mouse y depues que permita su visualizacion mas detallada 
 
 
-<div class="barraConfiguracion">
-	<label> Codigos catalogados</label>
-	<span class="icon-grid"></span>
-	<span class=" icon-list"></span>
 
-</div>
+
+
 
 {% comment %}
+		{% if codigos %}
+		<table>
+		<tr><th>Nombre</th><th>Lenguaje</th><th colspan="4">Accion</th><tr>
+			{% for codigo in codigos %}
+			<tr>
+				<td>{{ codigo.titulo }}</td>
+				<td>{{codigo.lenguaje}}</td>
+				<td>{% if codigo.archivo %}
+					<span class=" icon-attachment"></span>
+				{% else %}
+					<span class="  icon-attachment"></span>
+				{% endif %}</td>
+				<td><span class=" icon-file-2"></span></td>
+				<td><span class=" icon-remove"></span></td>
+			</tr>				
 
-{% if codigos %}
-<table>
-<tr><th>Nombre</th><th>Lenguaje</th><th colspan="4">Accion</th><tr>
-	{% for codigo in codigos %}
-	<tr>
-		<td>{{ codigo.nombre }}</td>
-		<td>{{codigo.lenguaje}}</td>
-		<td>{% if codigo.archivo %}
-			<span class=" icon-attachment"></span>
-		{% else %}
-			<span class="  icon-attachment"></span>
-		{% endif %}</td>
-		<td><span class=" icon-file-2"></span></td>
-		<td><span class=" icon-remove"></span></td>
-
-	</tr>
-
-		
-
-	{% endfor %}
-</table>
-{% endif%}
-
-
-
+			{% endfor %}
+		</table>
+		{% endif%}
 {% endcomment %}
 
-
 {% if codigos %}
-{% for codigo in codigos %}
-<article class="codigos_codigo">
-	<p>{{ codigo.nombre }}  </p>
-{% if codigo.archivo %}
-			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
-		{% else %}
-			<span class="  icon-attachment"></span>
-		{% endif %}
+	{% for codigo in codigos %}
+		<article class="codigos_codigo">
+			<div>
+				<span class="tituloCodigo">{{ codigo.titulo }} </span>
+				<span class=" icon-file-2"></span>
+				<span >F</span>
 
-	<span class=" icon-file-2"></span>
-		<span class=" icon-remove"></span></td>
+			{% if codigo.archivo %}
+				<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+			{% else %}
+				<span class="  icon-attachment"></span>
+			{% endif %}
+			
+			<span class="lenguajeCodigo" >Python</span></td>
+			<span >SO</span></td>
+			</div>
+			<div><p>{{ codigo.descripcion }} ljdslkj lasdjlkfsjdakljaksld jfl jaldjf lasjdlkf jlkasjl
+			 afd kaldsjflk jasdfasdklf jasd f
+			 ad asdk lfjaskdlfjlasdlfasdf</p>
+			</div>
+			
+		</article>
+	{% endfor %}
 
-</article>
-{% endfor %}
+		{% for codigo in codigos %}
+		<article class="codigos_codigo">
+			<div>
+				<span>{{ codigo.titulo }} </span>
+				<span class=" icon-file-2"></span>
+				<span >F</span>
 
+			</div>
+			<div><codigo>{{ codigo.descripcion }} </codigo></div>
+			<div>
+			{% if codigo.archivo %}
+				<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+			{% else %}
+				<span class="  icon-attachment"></span>
+			{% endif %}
+			
+			<span >lenguaje</span></td>
+			<span >SO</span></td>
+			</div>
+		</article>
+	{% endfor %}
 
-{% for codigo in codigos %}
-<article class="codigos_codigo">
-	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
-{% if codigo.archivo %}
-			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
-		{% else %}
-			<span class="  icon-attachment"></span>
-		{% endif %}
+		{% for codigo in codigos %}
+		<article class="codigos_codigo">
+			<div>
+				<span>{{ codigo.titulo }} </span>
+				<span class=" icon-file-2"></span>
+				<span >F</span>
 
-	<span class=" icon-file-2"></span>
-		<span class=" icon-remove"></span></td>
-
-</article>
-{% endfor %}
-
-{% for codigo in codigos %}
-<article class="codigos_codigo">
-	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
-{% if codigo.archivo %}
-			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
-		{% else %}
-			<span class="  icon-attachment"></span>
-		{% endif %}
-
-	<span class=" icon-file-2"></span>
-		<span class=" icon-remove"></span></td>
-
-</article>
-{% endfor %}
-{% for codigo in codigos %}
-<article class="codigos_codigo">
-	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
-{% if codigo.archivo %}
-			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
-		{% else %}
-			<span class="  icon-attachment"></span>
-		{% endif %}
-
-	<span class=" icon-file-2"></span>
-		<span class=" icon-remove"></span></td>
-
-</article>
-{% endfor %}
-{% for codigo in codigos %}
-<article class="codigos_codigo">
-	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
-{% if codigo.archivo %}
-			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
-		{% else %}
-			<span class="  icon-attachment"></span>
-		{% endif %}
-
-	<span class=" icon-file-2"></span>
-		<span class=" icon-remove"></span></td>
-
-</article>
-{% endfor %}
-{% for codigo in codigos %}
-<article class="codigos_codigo">
-	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
-{% if codigo.archivo %}
-			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
-		{% else %}
-			<span class="  icon-attachment"></span>
-		{% endif %}
-
-	<span class=" icon-file-2"></span>
-		<span class=" icon-remove"></span></td>
-
-</article>
-{% endfor %}
-{% for codigo in codigos %}
-<article class="codigos_codigo">
-	<p>{{ codigo.nombre }}  ksfkal jkfasd asdlfadkjflasjdlfj asdfj asd fasld;j</p>
-
-{% if codigo.archivo %}
-			<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
-		{% else %}
-			<span class="  icon-attachment"></span>
-		{% endif %}
-
-	<span class=" icon-file-2"></span>
-		<span class=" icon-remove"></span></td>
-
-</article>
-{% endfor %}
+			</div>
+			<div><codigo>{{ codigo.descripcion }} </codigo></div>
+			<div>
+			{% if codigo.archivo %}
+				<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+			{% else %}
+				<span class="  icon-attachment"></span>
+			{% endif %}
+			
+			<span >lenguaje</span></td>
+			<span >SO</span></td>
+			</div>
+		</article>
+	{% endfor %}
+	
 
 {% endif%}
-
-
-
-
-
-
-
-
-
 
 <br/>
 {% if codigos %}

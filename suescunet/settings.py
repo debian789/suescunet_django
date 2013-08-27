@@ -150,7 +150,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    'suescunet.apps.articulos',
+    'suescunet.apps.galeria',
     'suescunet.apps.home',
     'suescunet.apps.webServices',
     'suescunet.apps.elementos_desarrollo',

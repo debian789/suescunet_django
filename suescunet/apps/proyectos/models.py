@@ -19,6 +19,10 @@ class mdl_proyectos(models.Model):
 	publicado 	 = models.BooleanField(default=True)
 	fechaIngreso = models.DateField(auto_now = True)
 
+	class Meta:
+		verbose_name = ('Proyecto')
+		verbose_name_plural = ('Proyectos')
+
 	def __unicode__(self):
 		return self.nombre
 

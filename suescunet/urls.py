@@ -6,9 +6,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-	url(r'^',include('suescunet.apps.articulos.urls')),
+	url(r'^',include('suescunet.apps.galeria.urls')),
 	url(r'^',include('suescunet.apps.home.urls')),
-    url(r'^',include('suescunet.apps.webServices.wsArticulos.urls')),
+    url(r'^',include('suescunet.apps.webServices.wsGalerias.urls')),
     url(r'^',include('suescunet.apps.codigos.urls')),
     url(r'^',include('suescunet.apps.proyectos.urls')),
 

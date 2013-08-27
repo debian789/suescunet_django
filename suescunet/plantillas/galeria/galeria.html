@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block titulo %} Inicio Bienvenidos{% endblock %}
+{% block contenido%}
+
+
+{% if galerias  %}
+	{% for galeria in galerias %}
+		<article>
+			<span>{{galeria.titulo}}</span>
+			<div></div>
+			<figure>
+				<img src="{{MEDIA_URL}}/{{galeria.imagen}}">
+			</figure>
+			<p>{{galeria.contenido}}</p>
+			<div><a href="/galeria/detalle/{{galeria.id}}">
+			<input type="button" value="Detalles" >
+				
+			</a>
+		</div>
+		</article>
+	{% endfor%}
+{% endif%}
+
+{% if user.is_authenticated %}
+<a href="{% url vista_galeria_ingresar2 %}"> Agregar Nuevo</a>
+{% endif %}
+
+
+<br/>
+{% if galerias %}
+		<a href="/galeria/page/1"> Primero </a>
+	{% if galerias.has_previous %}
+		<a href="/galeria/page/{{galerias.previous_page_number}}/"> anterior </a>
+	{% else %}
+		<a href="#">anterior </a>
+	{%endif%}
+	{% if galerias.has_next %}
+		<a href="/galeria/page/{{galerias.next_page_number}}/">siguiente </a>
+	{% else %}
+		<a href="#">siguiente </a>
+	{%endif%}
+
+<a href="/galeria/page/{{galerias.paginator.num_pages}}">Ultimo </a>
+
+
+<h4>Pagina {{ galerias.number }} de {{galerias.paginator.num_pages}}</h4>
+
+{% endif%}
+
+{% endblock%}
+
