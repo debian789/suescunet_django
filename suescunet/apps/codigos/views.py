@@ -43,3 +43,9 @@ def view_codigos(request,pagina):
 
 	contexto = {"codigos":codigos}
 	return render_to_response("codigos/codigos.html",contexto,context_instance = RequestContext(request))
+
+
+def single_codigo(request,id_codigo):
+	codigo = mdl_codigos.objects.get(id=id_codigo)
+	contexto = {"codigo":codigo}
+	return render_to_response('codigos/codigo_detalles.html',contexto,context_instance=RequestContext(request))
