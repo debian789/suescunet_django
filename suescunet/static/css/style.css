@@ -153,9 +153,9 @@ table{border-collapse:collapse;border-spacing:0}
 .icon-bookmark-2:before{content:"\e056"}
 body{font-size:16px;text-align:center;background-color:#f0f0f0}
 header{background-color:#3f3f3f;width:100%;}
-header h1{font-size:20px;color:#e2e2e2;width:60%}
+header h1{font-size:20px;color:#e2e2e2;width:60%;text-align:left}
 header p{height:20px;text-align:right;width:30%;}
-header p a{color:#3d3d3d;text-decoration:none}
+header p a{color:#e2e2e2;text-decoration:none}
 header h1,header p{display:inline-block;vertical-align:top}
 header nav{border-top:1px solid #181818;background-color:#5c5c5c;height:38px;text-align:left;position:relative;padding-left:4%;}
 header nav span{display:inline-block;height:100%;margin:0 0 0 0;vertical-align:top;padding:0 10px 0 10px;}
