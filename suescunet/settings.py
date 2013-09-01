@@ -156,6 +156,8 @@ INSTALLED_APPS = (
     'suescunet.apps.elementos_desarrollo',
     'suescunet.apps.codigos',
     'suescunet.apps.proyectos',
+    'django_extensions',
+
 
 
     # Uncomment the next line to enable admin documentation:

@@ -151,30 +151,33 @@ table{border-collapse:collapse;border-spacing:0}
 .icon-code:before{content:"\e054"}
 .icon-console-2:before{content:"\e055"}
 .icon-bookmark-2:before{content:"\e056"}
-body{font-size:16px;text-align:center;background-color:#f0f0f0}
-header{background-color:#3f3f3f;width:100%;}
-header h1{font-size:20px;color:#e2e2e2;width:60%;text-align:left}
-header p{height:20px;text-align:right;width:30%;}
-header p a{color:#e2e2e2;text-decoration:none}
-header h1,header p{display:inline-block;vertical-align:top}
-header nav{border-top:1px solid #181818;background-color:#5c5c5c;height:38px;text-align:left;position:relative;padding-left:4%;}
-header nav span{display:inline-block;height:100%;margin:0 0 0 0;vertical-align:top;padding:0 10px 0 10px;}
-header nav span a{color:#ccc;display:block;margin:10px 0 0 0;width:100%;text-decoration:none}
-header nav span:hover{background-color:#3d3d3d;border-top:0 solid #181818;border-left:1px solid #181818;border-right:1px solid #181818;border-bottom:0 solid #181818;}
-header nav span:hover a{color:#ccc;display:block}
-#contenido{background-color:#e2e2e2;width:100%;}
+body{font-size:16px;text-align:center;background-color:#f9f9f9}
+header{width:100%;}
+header .heradMenu{background-color:#1d354d;height:60px;border:1px solid #1d354d;}
+header .heradMenu .titulo{float:left;margin-left:2%;height:10px;margin-top:17px;color:#f9f9f9;font-size:1.1em}
+header .heradMenu nav{margin-top:24px;height:38px;text-align:left;position:relative;padding-right:4%;text-align:right;text-align:bottom;}
+header .heradMenu nav span{border:1px solid #181818;background-color:#1d354d;display:inline-block;height:100%;margin:0 0 0 0;vertical-align:top;padding:0 10px 0 10px;}
+header .heradMenu nav span a{color:#ccc;display:block;margin:10px 0 0 0;width:100%;text-decoration:none}
+header .heradMenu nav span:hover{background-color:#f0f0f0;border-top:0 solid #181818;border-left:1px solid #181818;border-right:1px solid #181818;border-bottom:0 solid #181818;}
+header .heradMenu nav span:hover a{color:#3d3d3d;display:block}
+header .heardTitulo{background-color:#16283a;padding:.3em;text-align:right;}
+header .heardTitulo span{font-size:16px;color:#e2e2e2;width:60%;text-align:left;}
+header .heardTitulo span a{color:#e2e2e2;text-decoration:none}
+#contenido{background-color:#f0f0f0;width:100%;position:relative;margin:.5em 0 1em 0;}
 #contenido article figure{width:100%;overflow:hidden;}
 #contenido article figure img{margin:0;width:90%}
 #contenido article span{display:block;color:#3f3f3f;border-bottom:1px solid #3d3d3d;height:25px;margin:6px auto 6px auto;width:90%;text-align:center}
 #contenido article p{margin:2px auto 2px auto;text-align:justify;width:90%;font-size:.9em;overflow:hidden;height:auto}
 #contenido article input{width:90%;margin-bottom:6px}
-#contenido .codigos_codigo{border:1px solid #d5d5d5;border-left:.6em solid #00f;background-color:#fff;width:100%;}
-#contenido .codigos_codigo div{width:100%;padding:.3em;}
-#contenido .codigos_codigo div span,#contenido .codigos_codigo div strong{vertical-align:top}
-#contenido .codigos_codigo div span{display:inline-block;vertical-align:top;width:2em;height:auto;float:right;margin:0;border:0}
-#contenido .codigos_codigo div .tituloCodigo{text-align:left;float:left;margin-bottom:.2em;width:60%}
-#contenido .codigos_codigo div .lenguajeCodigo{width:auto}
-#contenido .codigos_codigo div p{padding-top:.2em;padding-bottom:.3em;border-top:2px solid #e2e2e2;width:99%;text-align:justify;margin:0 .7em 0 auto}
+#contenido .codigos_codigo{background-color:#f9f9f9;border-right:1px solid #e2e2e2;border-left:.6em solid #4388cc;padding:7px;margin-top:5px;}
+#contenido .codigos_codigo .listCodigoTitulo{padding:4px;height:20px;}
+#contenido .codigos_codigo .listCodigoTitulo span,#contenido .codigos_codigo .listCodigoTitulo strong{vertical-align:top}
+#contenido .codigos_codigo .listCodigoTitulo span{display:inline-block;vertical-align:top;width:2em;height:auto;float:right;margin:0;border:0}
+#contenido .codigos_codigo .listCodigoTitulo .tituloCodigo{text-align:left;float:left;margin-bottom:.2em;width:60%;overflow:hidden;}
+#contenido .codigos_codigo .listCodigoTitulo .tituloCodigo a{text-decoration:none;color:#19abff}
+#contenido .codigos_codigo .listCodigoTitulo .lenguajeCodigo{width:auto}
+#contenido .codigos_codigo .listCodigoContenido{text-align:left;padding:5px;border-top:2px solid #ccc;}
+#contenido .codigos_codigo .listCodigoContenido p{width:100%;text-align:justify}
 #contenido .fragmentos_codigo{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;width:100%;display:inline-block;vertical-align:top;margin:.5em 0 0 0;}
 #contenido .fragmentos_codigo p{padding:.5em .5em .7em .5em;border-bottom:1px solid #3d3d3d}
 #contenido .fragmentos_codigo span{margin-top:.5em;border:0;display:inline-block;vertical-align:top;width:25%}
@@ -187,7 +190,7 @@ header nav span:hover a{color:#ccc;display:block}
 #contenido fieldset input[type=password]{border:1px solid #e1e1e1;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;height:2em}
 #contenido fieldset .conFacebook{background-color:#3b5998;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;padding:7px 15px 7px 7px;color:#fff;text-align:right}
 #contenido fieldset .conTwitter{background-color:#2fc2ef;color:#fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin-top:5px;margin-bottom:7px;padding:7px 15px 7px 7px;text-align:right}
-#contenido .barraConfiguracion{background-color:#36a9e1;display:block;text-align:right;padding:.3em;margin-bottom:.4em;}
+#contenido .barraConfiguracion{background-color:#4388cc;display:block;text-align:right;padding:.3em;margin-bottom:.4em;}
 #contenido .barraConfiguracion span{color:#f0f0f0}
 #contenido .barraConfiguracion label{float:left;color:#fff}
 #contenido .navegacionNum a,#contenido .navegacionNum h4{display:inline-block}
@@ -203,7 +206,5 @@ footer div ul li a{color:#ccc;display:block;text-decoration:none}
 footer div ul li a:hover{color:#5c5c5c;background-color:#3d3d3d;display:block;text-decoration:none}
 footer div span{margin-top:.5em;color:#3d3d3d;font-size:1.2em;display:block;width:100%;border-bottom:1px solid #3d3d3d}
 footer div p{color:#ccc;font-size:.9em;margin:1em 1em 1em 1em;margin-bottom:-1em;height:80%;overflow:hidden;text-align:justify;width:90%}
-@media screen and (min-width:768px){#contenido{width:55%;margin:1em 2% 1em 3%;}
-#contenido article{border:1px solid #3f3f3f;width:30%}
-#contenido .fragmentos_codigo{width:30%}
+@media screen and (min-width:768px){#contenido{width:55%;position:relative;padding:1em;margin:1em 2% 1em 3%;}
 }footer div{width:30%}

@@ -6,61 +6,91 @@ Codigos catalogados
 {% endblock %}
 
 {% block contenido %}
+{%comment %}
 
-
-
-
-
-
-{% comment %}
-		{% if codigos %}
-		<table>
-		<tr><th>Nombre</th><th>Lenguaje</th><th colspan="4">Accion</th><tr>
-			{% for codigo in codigos %}
-			<tr>
-				<td>{{ codigo.titulo }}</td>
-				<td>{{codigo.lenguaje}}</td>
-				<td>{% if codigo.archivo %}
-					<span class=" icon-attachment"></span>
-				{% else %}
-					<span class="  icon-attachment"></span>
-				{% endif %}</td>
-				<td><span class=" icon-file-2"></span></td>
-				<td><span class=" icon-remove"></span></td>
-			</tr>				
-
-			{% endfor %}
-		</table>
-		{% endif%}
+<article class="listCodigo">
+	<div class="listCodigoTitulo"></div>
+	<div class="listCodigoContenido"></div>
+</article>
 {% endcomment %}
 
+
+
+
 {% if codigos %}
+
+
 	{% for codigo in codigos %}
-		<article class="codigos_codigo">
-			<div>
-				<span class="tituloCodigo"><a href="/detalle/codigo/{{ codigo.id }}">{{ codigo.titulo }}</a> </span>
+		<article class="codigos_codigo">			
+			<div class="listCodigoTitulo">				
+				<span class="tituloCodigo">
+					<a href="/detalle/codigo/{{ codigo.id }}">{{ codigo.titulo }}</a>
+				</span>
 				<span class=" icon-file-2"></span>
 				<span >F</span>
-
-			{% if codigo.archivo %}
-				<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
-			{% else %}
-				<span class="  icon-attachment"></span>
-			{% endif %}
-			
-			<span class="lenguajeCodigo" >Python</span></td>
-			<span >SO</span></td>
+				{% if codigo.archivo %}
+					<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+				{% else %}
+					<span class="  icon-attachment"></span>
+				{% endif %}
+				
+				<span class="lenguajeCodigo" >Python</span>
+				<span >SO</span>
 			</div>
-			<div><p>{{ codigo.descripcion }} </p>
-			</div>
-			
+			<div class="listCodigoContenido">
+				<p>{{ codigo.descripcion }}dasdasd </p>
+			</div>		
 		</article>
+
+		<article class="codigos_codigo">			
+			<div class="listCodigoTitulo">				
+				<span class="tituloCodigo">
+					<a href="/detalle/codigo/{{ codigo.id }}">{{ codigo.titulo }}</a>
+				</span>
+				<span class=" icon-file-2"></span>
+				<span >F</span>
+				{% if codigo.archivo %}
+					<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+				{% else %}
+					<span class="  icon-attachment"></span>
+				{% endif %}
+				
+				<span class="lenguajeCodigo" >Python</span>
+				<span >SO</span>
+			</div>
+			<div class="listCodigoContenido">
+				<p>{{ codigo.descripcion }}dasdasd </p>
+			</div>		
+		</article>
+
+
+		<article class="codigos_codigo">			
+			<div class="listCodigoTitulo">				
+				<span class="tituloCodigo">
+					<a href="/detalle/codigo/{{ codigo.id }}">{{ codigo.titulo }}</a>
+				</span>
+				<span class=" icon-file-2"></span>
+				<span >F</span>
+				{% if codigo.archivo %}
+					<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
+				{% else %}
+					<span class="  icon-attachment"></span>
+				{% endif %}
+				
+				<span class="lenguajeCodigo" >Python</span>
+				<span >SO</span>
+			</div>
+			<div class="listCodigoContenido">
+				<p>{{ codigo.descripcion }}dasdasd </p>
+			</div>		
+		</article>
+
+		
 	{% endfor %}
+{% endif %}
 
 
-	
 
-{% endif%}
 
 <br/>
 {% if codigos %}
@@ -80,9 +110,5 @@ Codigos catalogados
 
 
 <h4>Pagina {{ codigos.number }} de {{codigos.paginator.num_pages}}</h4>
-
 {% endif%}
-
-
-
 {% endblock %}

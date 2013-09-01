@@ -23,14 +23,20 @@ window.location.reload()
 </head>
 <body>
 	<header>
-		<h1>Test Tecnologia</h1>
-		<p>
-			{% if user.is_authenticated %}
-				<a href="{% url vista_logout %}"  class=" icon-enter"> cerrar cesion</a>
-			{% else %}
-				<a href="{% url vista_login %}" class=" icon-enter"> login</a>
-			{% endif %}
-		</p>
+		<div class="heardTitulo">
+			<span>
+				
+				{% if user.is_authenticated %}
+					<a href="{% url vista_logout %}"  class=" icon-enter"> cerrar cesion</a>
+				{% else %}
+					<a href="{% url vista_login %}" class=" icon-enter"> login</a>
+				{% endif %}
+			</span>
+			
+		</div>
+		<div class="heradMenu">
+			<span class="titulo">Test Tecnologia</span>
+	
 		<nav>
 			<span><a href="/galeria/page/1" class='icon-home'> Inicio</a></span>
 			<span><a href="/galeria/page/1" class="icon-images"> Galeria</a></span>
@@ -40,6 +46,7 @@ window.location.reload()
 
 		{%comment %}	<a href="{% url vista_galeria_ingresar1 %}">agregar productos dos</a>{% endcomment %}
 		</nav>
+</div>
 	</header>
 
 <aside>
@@ -95,6 +102,8 @@ window.location.reload()
 
 		{% endblock%}
 	</section>
+
+
 	<section id="cuadroInteractivo">
 		<div class="Box2D_logo"></div>
 	</section>

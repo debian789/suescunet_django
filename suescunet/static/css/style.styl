@@ -8,6 +8,7 @@ gris_20 = #e2e2e2
 gris_10 = #f0f0f0
 azul_10 = #6FB6F1
 negro_10 = #181818
+blanco = #F9F9F9
 
 c_twitter = #2FC2EF
 c_facebook = #3B5998
@@ -22,101 +23,132 @@ border-radius()
 	-moz-border-radius arguments
 	border-radius arguments
 
+lis()
+	border 1px solid blue
 
 body
 	font-size 16px
 	text-align center
-	background-color gris_10	
+	background-color blanco	
 	//background-color #E9EAED
 header
-	background-color gris_80
+	width 100%
 	//border 1px solid red
 	//height 0px
-	width 100%
+
+	.heradMenu
+		background-color #1d354d
+		height 60px
+		border 1px solid #1d354d
+
+
+		//border 1px solid #1d354d
+		//text-align bottom
+
+		.titulo 
+			//border 0px solid blue 
+			float left
+			margin-left 2%
+			height 10px
+			margin-top 17px 
+			color blanco
+			font-size 1.1em
+
+		nav 
+			margin-top 24px
+			height 38px
+			text-align left
+			position relative
+			padding-right 4%
+			text-align right
+			text-align bottom
+			//border 3px solid green
+			//background-color gris_70
+
+	
+			span 
+				border 1px solid negro_10
+				background-color #1d354d
+				//border-left 1px solid negro_10
+				//border-top 1px solid negro_10
+				//border-right 1px solid negro_10
+				display inline-block
+				height 100%
+				margin 0px 0px 0px 0px
+				vertical-align top
+				padding 0px 10px 0px 10px	
+
+				a 
+					color gris_50				
+					display block
+					margin 10px 0px 0px 0px
+					width 100%	
+					text-decoration none
+
+			span:hover 
+				background-color gris_10
+				border-top 0px  solid negro_10 
+				border-left 1px  solid negro_10 
+				border-right 1px  solid negro_10 
+				border-bottom 0px  solid negro_10 
+
+				// 1px 0px 1px 
+				//border-color  negro_10
+				//display inline-block
+				//height 100%
+				//margin 0px 0px 0px 0px
+				//vertical-align top
+				//padding 0px 10px 0px 10px
+
+				a 
+					color gris_60				
+					display block
+					//margin 10px 0px 0px 0px
+					//width 100%	
+					//text-decoration none	
 
 
 
-	h1 
-		font-size 20px
-		color #e2e2e2
-		//border 1px solid green
-		width 60%
-		text-align left
-
-
-	p 
-
-		height 20px
-		//border 1px solid orange
+	.heardTitulo
+		background-color #16283a
+		padding 0.3em
+		//height 30px
 		text-align right
-		width 30%
+		//padding 0.4em
 
-		a 
-			color gris_20
-			text-decoration none
-	
-	h1,p 
-		display inline-block
-		vertical-align top
-	nav 
-		border-top 1px solid negro_10
-		background-color gris_70
-		height 38px
-		text-align left
-		position relative
-		padding-left 4%
-	
-		span 
-			//border 1px solid black
-			display inline-block
-			height 100%
-			margin 0px 0px 0px 0px
-			vertical-align top
-			padding 0px 10px 0px 10px
-
-
-		
-			
+		span
+			font-size 16px
+			color #e2e2e2
+			//border 1px solid green
+			width 60%
+			text-align left
 
 			a 
-				color gris_50				
-				display block
-				margin 10px 0px 0px 0px
-				width 100%	
-				text-decoration none	
-		span:hover 
-			background-color gris_60
-			border-top 0px  solid negro_10 
-			border-left 1px  solid negro_10 
-			border-right 1px  solid negro_10 
-			border-bottom 0px  solid negro_10 
-
-			// 1px 0px 1px 
-			//border-color  negro_10
-			//display inline-block
-			//height 100%
-			//margin 0px 0px 0px 0px
-			//vertical-align top
-			//padding 0px 10px 0px 10px
-
-			a 
-				color gris_50				
-				display block
-				//margin 10px 0px 0px 0px
-				//width 100%	
-				//text-decoration none	
+				color gris_20
+				text-decoration none
+				//border 1px solid red
+	
 
 			
 
 #contenido
-	background-color gris_20
+	background-color gris_10
 	width 100%
+	position relative
+	margin 0.5em 0em 1em 0em
+
 	//border-radius(10px)
 	//border 2px solid gris_60
 	//min-height 100px
-	//margin 1em 2% 1em 3%
 	//width 55%
 	//padding 1em
+
+
+
+
+
+
+
 
 
 
@@ -168,20 +200,33 @@ header
 			margin-bottom 6px
 
 	.codigos_codigo
-		border 1px solid gris_40 
-		border-left 0.6em solid blue
-		background-color white
-		width 100%
+		background-color blanco
+		//border-top 1px solid gris_20
+		border-right 1px solid gris_20
+		//border-bottom 1px solid gris_20
+		border-left 0.6em solid #4388cc
+
+		padding 7px 
+		margin-top 5px
+		//width 100%
+		//position relative
+		//padding 1em
 		//margin 0px auto 0px 1em
 
-		div 
-			width 100%
-			padding 0.3em
+		
+		.listCodigoTitulo
+			//border 1px solid red
+			padding 4px
+			height 20px
+
 			//border 1px solid red 
+			//width 100%
+			//padding 1em
+			//margin 1em
 
 			span,strong
-				//display inline-block
 				vertical-align top
+				//display inline-block
 				//border 1px solid blue
 
 			span 
@@ -197,23 +242,32 @@ header
 				//border 0px
 
 			.tituloCodigo
-				//border 1px solid red
+				//border 1px solid blue
 				text-align left
 				float left
 				margin-bottom 0.2em
 				width 60%
+				overflow hidden 
+
+				a 
+					text-decoration none
+					color #19abff
 
 			.lenguajeCodigo
 				width auto
-			p 
-				padding-top 0.2em
-				padding-bottom 0.3em
-				border-top 2px solid gris_20
-				width 99%
-				text-align justify
-				margin 0px 0.7em 0px auto
 
-				
+		.listCodigoContenido
+			//border 1px solid green
+			text-align left
+			padding 5px
+			border-top 2px solid gris_50
+
+			p 
+				//padding-top 0.2em
+				//padding-bottom 0.3em
+				width 100%
+				text-align justify
+				//margin 0px 0.7em 0px auto
 
 
 
@@ -297,7 +351,7 @@ header
 
 	.barraConfiguracion
 		//border 1px solid blue
-		background-color #36a9e1
+		background-color #4388cc
 		display block
 		text-align right
 		padding 0.3em
