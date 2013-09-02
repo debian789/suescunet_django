@@ -11,7 +11,8 @@ urlpatterns = patterns('',
     url(r'^',include('suescunet.apps.webServices.wsGalerias.urls')),
     url(r'^',include('suescunet.apps.codigos.urls')),
     url(r'^',include('suescunet.apps.proyectos.urls')),
-
+    url(r'^',include('suescunet.apps.enlacesExternos.urls')),
+    
 
 
 	url(r'^media/(?P<path>.*)$','django.views.static.serve',{"document_root":settings.MEDIA_ROOT}),

@@ -5,17 +5,17 @@ def url(self,filename):
 		return ruta
 
 class galeria_model(models.Model):
-	titulo = models.CharField(max_length = 200)
-	contenido = models.TextField()
-	publicado = models.BooleanField(default=True)
+	titulo          = models.CharField(max_length = 300)
+	descripcion     = models.TextField()
+	publicado       = models.BooleanField(default=True)
 	fecha_publicado = models.DateField(auto_now = True)
-	imagen = models.ImageField(upload_to=url,null=True,blank=True)
-	precio = models.DecimalField(max_digits=6,decimal_places=2)
-	stock = models.IntegerField()
+	imagen          = models.ImageField(upload_to=url,null=True,blank=True)
+	precio          = models.DecimalField(max_digits=6,decimal_places=2)
+	destacado       = models.IntegerField()
 
 	class Meta:
-		verbose_name = ('Galeria')
-		verbose_name_plural = ('Galerias')
+		verbose_name        = ('Diagrama')
+		verbose_name_plural = ('Diagramas')
 
 	
 	def __unicode__(self):

@@ -169,10 +169,10 @@ header .heardTitulo span a{color:#e2e2e2;text-decoration:none}
 #contenido article span{display:block;color:#3f3f3f;border-bottom:1px solid #3d3d3d;height:25px;margin:6px auto 6px auto;width:90%;text-align:center}
 #contenido article p{margin:2px auto 2px auto;text-align:justify;width:90%;font-size:.9em;overflow:hidden;height:auto}
 #contenido article input{width:90%;margin-bottom:6px}
-#contenido .codigos_codigo{background-color:#f9f9f9;border-right:1px solid #e2e2e2;border-left:.6em solid #4388cc;padding:7px;margin-top:5px;}
+#contenido .codigos_codigo{background-color:#f9f9f9;border-right:1px solid #e2e2e2;border-left:.6em solid #4388cc;margin-top:5px;padding:7px;}
 #contenido .codigos_codigo .listCodigoTitulo{padding:4px;height:20px;}
 #contenido .codigos_codigo .listCodigoTitulo span,#contenido .codigos_codigo .listCodigoTitulo strong{vertical-align:top}
-#contenido .codigos_codigo .listCodigoTitulo span{display:inline-block;vertical-align:top;width:2em;height:auto;float:right;margin:0;border:0}
+#contenido .codigos_codigo .listCodigoTitulo span{display:inline-block;vertical-align:top;width:auto;height:auto;float:right;margin:0;margin-right:7px;overflow:hidden;border:0}
 #contenido .codigos_codigo .listCodigoTitulo .tituloCodigo{text-align:left;float:left;margin-bottom:.2em;width:60%;overflow:hidden;}
 #contenido .codigos_codigo .listCodigoTitulo .tituloCodigo a{text-decoration:none;color:#19abff}
 #contenido .codigos_codigo .listCodigoTitulo .lenguajeCodigo{width:auto}

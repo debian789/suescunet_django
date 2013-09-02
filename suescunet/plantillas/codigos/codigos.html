@@ -3,6 +3,7 @@
 {% block barraContenido %}
 
 Codigos catalogados
+<span>nuevo</span>
 {% endblock %}
 
 {% block contenido %}
@@ -16,6 +17,11 @@ Codigos catalogados
 
 
 
+<a href="/add/codigo/">
+agregar
+	
+</a>
+
 
 {% if codigos %}
 
@@ -26,66 +32,21 @@ Codigos catalogados
 				<span class="tituloCodigo">
 					<a href="/detalle/codigo/{{ codigo.id }}">{{ codigo.titulo }}</a>
 				</span>
-				<span class=" icon-file-2"></span>
-				<span >F</span>
 				{% if codigo.archivo %}
 					<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
 				{% else %}
 					<span class="  icon-attachment"></span>
 				{% endif %}
 				
-				<span class="lenguajeCodigo" >Python</span>
-				<span >SO</span>
+				<span class="lenguajeCodigo" >{{ codigo.lenguaje }}</span>
+				<span >{{ codigo.so }}</span>
 			</div>
 			<div class="listCodigoContenido">
-				<p>{{ codigo.descripcion }}dasdasd </p>
+				<p>{{ codigo.descripcion }} </p>
 			</div>		
 		</article>
 
-		<article class="codigos_codigo">			
-			<div class="listCodigoTitulo">				
-				<span class="tituloCodigo">
-					<a href="/detalle/codigo/{{ codigo.id }}">{{ codigo.titulo }}</a>
-				</span>
-				<span class=" icon-file-2"></span>
-				<span >F</span>
-				{% if codigo.archivo %}
-					<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
-				{% else %}
-					<span class="  icon-attachment"></span>
-				{% endif %}
-				
-				<span class="lenguajeCodigo" >Python</span>
-				<span >SO</span>
-			</div>
-			<div class="listCodigoContenido">
-				<p>{{ codigo.descripcion }}dasdasd </p>
-			</div>		
-		</article>
-
-
-		<article class="codigos_codigo">			
-			<div class="listCodigoTitulo">				
-				<span class="tituloCodigo">
-					<a href="/detalle/codigo/{{ codigo.id }}">{{ codigo.titulo }}</a>
-				</span>
-				<span class=" icon-file-2"></span>
-				<span >F</span>
-				{% if codigo.archivo %}
-					<a href="{{MEDIA_URL}}/{{codigo.archivo}}"><span class=" icon-attachment"></span></a>
-				{% else %}
-					<span class="  icon-attachment"></span>
-				{% endif %}
-				
-				<span class="lenguajeCodigo" >Python</span>
-				<span >SO</span>
-			</div>
-			<div class="listCodigoContenido">
-				<p>{{ codigo.descripcion }}dasdasd </p>
-			</div>		
-		</article>
-
-		
+	
 	{% endfor %}
 {% endif %}
 

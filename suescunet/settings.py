@@ -156,6 +156,7 @@ INSTALLED_APPS = (
     'suescunet.apps.elementos_desarrollo',
     'suescunet.apps.codigos',
     'suescunet.apps.proyectos',
+    'suescunet.apps.enlacesExternos',
     'django_extensions',
 
 
